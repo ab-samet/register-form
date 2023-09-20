@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>REGISTER PAGE</h1>
+<!--novalidate ile validasyon(zorunluluk) engellenebilir-->
+    <form action="">
+        <div>
+            <label for="firstname">First Name:</label> 
+            <!--label'deki for, inputtaki id ile arasında bağ olmasına yarayan bir keyword'dür(id ile for arasındaki isim aynı olursa kutucuğa işaretlendi mi parametrenin aktif hale gelmesine yarar)-->
+            <input
+            class="inputs" 
+            type="text" 
+            name="firstname"
+            id="firstname"
+            placeholder="Your first name"
+            required>
+        </div>
+
+        <div>
+            <label for="lastname">Last Name:</label>
+            <input
+            class="inputs" 
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Your last name"
+            required>
+        </div>
+
+        <div>
+            <label for="email">E-Mail:</label>
+            <input
+            class="inputs" 
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your e mail"
+            required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input
+            class="inputs" 
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Your pass"
+            required>
+        </div>
+
+        <div">
+            <label for="dob">Birthday:</label>
+            <input
+              class="inputs"
+              type="date"
+              name="dob"
+              id="dob"
+              placeholder="Your Birthday"
+              required
+            />
+          </div>
+
+        <div>
+            <label for="phone">Phone:</label>
+            <input
+            class="inputs" 
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Your Tel Number"
+            required>
+        </div>
+
+        <div class="textarea-div">
+            <label for="adress">Adress:</label>
+            <textarea 
+            class="inputs" 
+            name="adress" 
+            cols="25" 
+            rows="5"
+            placeholder="Your adress"></textarea>
+        </div>
+
+        <div>
+            <label for="country">Country:</label>
+            <select class="inputs" name="country" id="country">
+                <option value="null">Select Country</option>
+                <option value="TR">Turkey</option>
+                <option value="DE">Germany</option>
+                <option value="FR">Franch</option>
+                <option value="SP">Spain</option>
+                <option value="UK">UK</option>
+                <option value="USA">USA</option>
+                <option value="CN">China</option>
+                <option value="JP">Japan</option>
+                <option value="GR">Greek</option>
+                <option value="RS">Russia</option>
+                <option value="PL">Poland</option>
+                <option value="HL">Holland</option>
+                <option value="BR">Brasil</option>
+                <option value="MX">Mexico</option>
+                <option value="UR">Ukraine</option>
+                <option value="IT">Italy</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="gender">Gender:</label>
+
+            <div class="gender-div">
+                <input
+                class="radio-check" 
+                type="radio"
+                name="gender"
+                id="male">
+                <label for="male">Male</label>
+                <input
+                class="radio-check" 
+                type="radio"
+                name="gender"
+                id="female">
+                <label for="female">Female</label>
+            </div>
+            
+        </div>
+
+        <div>
+            <label for="languages">Languages:</label>
+
+            <div class="lang-div">
+                <input class="radio-check" type="checkbox" name="lang" id="lang">
+                <label for="">Turkish</label>
+                <input class="radio-check" type="checkbox">
+                <label for="">English</label>
+                <input class="radio-check" type="checkbox">
+                <label for="">German</label>
+                <input class="radio-check" type="checkbox">
+                <label for="">French</label>
+                <input class="radio-check" type="checkbox">
+                <label for="">Spainish</label>
+                <input class="radio-check" type="checkbox">
+                <label for="">Russian</label>
+                <input class="radio-check" type="checkbox">
+                <label for="">Italian</label>
+            </div>
+            
+        </div>
+
+        <div class="btn-cont">
+            <input type="submit" value="Save">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+</body>
+</html>
